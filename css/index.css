@@ -257,3 +257,16 @@ body .top div button {
   text-align: center;
   line-height: 30px;
 }
+.testimony {
+  background: url(../assets/images/lotus-flower.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.testimony .story {
+  border: 1px solid red;
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+}
