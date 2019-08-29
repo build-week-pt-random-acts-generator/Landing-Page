@@ -392,7 +392,7 @@ body .bottom div p {
 }
 .about .team .slide-wrap .slider {
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   overflow-x: auto;
 }
@@ -606,10 +606,12 @@ body .bottom div p {
   width: 100%;
   flex-flow: row nowrap;
   min-height: 25%;
+  max-height: 30%;
 }
 @media (max-width: 500px) {
   .about .team .slide-wrap .slider .slide .front .front-member {
     min-height: 25%;
+    max-height: 30%;
   }
 }
 .about .team .slide-wrap .slider .slide .front .front-member .pic-name {
@@ -652,6 +654,7 @@ body .bottom div p {
 @media (max-width: 500px) {
   .about .team .slide-wrap .slider .slide .front .front-member .pic-name h2 {
     font-size: 1.5em;
+    text-align: center;
   }
 }
 .about .team .slide-wrap .slider .slide .project-manager {
