@@ -647,6 +647,11 @@ body .bottom div p {
     font-size: 1.5em;
   }
 }
+.about .team .slide-wrap .slider .slide .project-manager {
+  flex-shrink: 1;
+  max-width: 60%;
+  margin: 0 auto;
+}
 @media (max-width: 500px) {
   .about .team .slide-wrap .slider .slide .project-manager .pm-member {
     flex-flow: row nowrap;
