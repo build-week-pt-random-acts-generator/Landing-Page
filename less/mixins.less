@@ -47,14 +47,14 @@
   justify-content: center;
   
   .pic-name {
-    border: 2px solid purple;
+    // border: 2px solid purple;
       color: @bgcolor;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 40%;
+      min-height: 30%;
       max-height: 40%;
       background: url(../assets/images/lotus-flower.png) no-repeat center center fixed;
       background-size: cover;
@@ -63,9 +63,15 @@
                       
   }//pic-name
   img {
-      width: 150px;
-      height: 150px;
+    // border: 4px solid hotpink;
+      width: 15em;
+      min-height:25%;
+      min-width: 25%;
+      max-width: 25%;
+      // height: 15rem;
       border-radius: 50%;
+      overflow: visible;
+      margin-top: 3%;
   }//img
   h2 {
       font-size: 2.5rem;
