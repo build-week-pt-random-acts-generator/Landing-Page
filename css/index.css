@@ -5,8 +5,11 @@
   background: #385999;
   justify-content: center;
   font-size: 1.8rem;
-  color: #E7EAF6;
   border: none;
+}
+.cta a {
+  text-decoration: none;
+  color: #E7EAF6;
 }
 .memberLayout {
   color: #113f67;
@@ -298,9 +301,12 @@ body .top div button {
   background: #385999;
   justify-content: center;
   font-size: 1.8rem;
-  color: #E7EAF6;
   border: none;
   margin-bottom: 3rem;
+}
+body .top div button a {
+  text-decoration: none;
+  color: #E7EAF6;
 }
 body .bottom div {
   display: flex;
@@ -347,7 +353,8 @@ body .bottom div p {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 .about .team .slide-wrap nav {
   width: 70%;
@@ -482,7 +489,7 @@ body .bottom div p {
     font-size: 1.2em;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 .about .team .slide-wrap .slider .slide .user .interface-member {
@@ -602,7 +609,7 @@ body .bottom div p {
 }
 @media (max-width: 500px) {
   .about .team .slide-wrap .slider .slide .front .front-member {
-    min-height: 30%;
+    min-height: 25%;
   }
 }
 .about .team .slide-wrap .slider .slide .front .front-member .pic-name {
