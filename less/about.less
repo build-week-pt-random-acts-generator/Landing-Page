@@ -18,7 +18,17 @@
                 display: flex;
                 justify-content: space-around;
                 align-content: center;
+                @media @phone {
+                    width: 100%;
+                    justify-content: space-around;
+                }
                 a {
+                    @media @phone {
+                        margin-top: 5%;
+                        width: 7rem;
+                        height: 7rem;
+                        font-size: 1.2rem;
+                    }
                   display: flex;
                   width: 10rem;
                   height: 10rem;
@@ -37,103 +47,165 @@
             height: 60vh;
             display: flex;
             overflow-x: auto;
-           
-            .slide {
-                // border: 1px solid hotpink;
+                .slide {
+                    @media @phone {
+                        width: 100%;
+                        flex-shrink: 0;
+                        height: 100%;
+                        flex-flow: column nowrap;
 
-                width: 100%;
-                flex-shrink: 0;
-                height: 100%;
-                display: flex;
-                flex-flow: column nowrap;
-                color: @headersecond;
-                h1 {
-                    font-size: 3.5rem;
-                    line-height: 2;
-                    align-self: center;
-                }            
-            .team {
-                // border: 2px solid yellow;
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                .about-member {
-                    background: @headermain;
-                    color: @bgcolor;
-                    font-size: 2rem;
+                        h1 {
+                            line-height: 1;
+                            text-align: center;
+
+                        }//h1
+                    }//media phone
+
+                    width: 100%;
+                    flex-shrink: 0;
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    color: @headersecond;
+                    h1 {
+                        font-size: 3.5rem;
+                        line-height: 2;
+                        align-self: center;
+                    }            
+                .team {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    padding: 0 2.5%;
+                    align-content: center;
+                    
+                    .about-member {
+                        background: @headermain;
+                        color: @bgcolor;
+                        font-size: 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 2.5%;
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
+                        .contacts {
+                            width: 30%;
+                            display: flex;
+                            justify-content: space-between;
+                                a{
+                                text-decoration: none;
+                                color: @bgcolor;
+                            }//a
+                        }//contacts
+                    }//about-member
+                }//team
+                .user {
+                    @media @phone {
+                        .front-member {
+                            display: flex; 
+                            flex-flow: row nowrap;
+                            flex-shrink: 1;
+                            .memberLayout();
+                        }//front-member 
+                    .about-member {
+                        // height: 60%;
+                        font-size: 1.2em;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
+                    }//about-member
+                    }//media phone
+                    .interface-member {
+                        display: flex; 
+                        flex-flow: column nowrap;
+                        flex-shrink: 1;
+                        .memberLayout();
+                    }//interface-member 
+                .about-member {
+                    height: 60%;
+                    display: flex;
                     flex-flow: column nowrap;
                     justify-content: space-around;
                     .contacts {
                         width: 30%;
                         display: flex;
                         justify-content: space-between;
-                            a{
+                        a {
                             text-decoration: none;
                             color: @bgcolor;
                         }//a
                     }//contacts
                 }//about-member
-            }//team
-            .user {
-                .interface-member {
-                    // border: 1px solid green;
-                    display: flex; 
-                    flex-flow: column nowrap;
-                    flex-shrink: 1;
-                    .memberLayout();
-                }//interface-member 
-            .about-member {
-                height: 60%;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: space-around;
-                .contacts {
-                    width: 30%;
-                    display: flex;
-                    justify-content: space-between;
-                    a {
-                        text-decoration: none;
-                        color: @bgcolor;
-                    }//a
-                }//contacts
-            }//about-member
-            }//user
-            .front {
-                flex-flow: column nowrap;
-                justify-content: space-between;
-                .front-member{
-                    .memberLayout();
-                    border: 2px solid yellow;
-                    width: 100%;
-                    flex-flow: row nowrap;
-                    min-height: 30%;
-    
-                    .pic-name {
-                        height: 100%;
-                        min-height: 100%;
-                        width: 45%;
-                        min-width: 45%;
+                }//user
+                .front {
+                    @media @phone {
+                        .front-member {
+                            display: flex; 
+                            flex-flow: row nowrap;
+                            flex-shrink: 1;
+                            .memberLayout();
+                        }//front-member 
+                    .about-member {
+                        // height: 60%;
+                        font-size: 1.2em;
                         display: flex;
-                        flex-flow: row nowrap;
-                        Justify-content: space-around;
-                        align-content: center;
-                    }//pic-name
-                }//front-member
-            }//front
-            .project-manager {
-                .pm-member {
-                    display: flex; 
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
+                        }//about member
+                    }//media phone
                     flex-flow: column nowrap;
-                    .memberLayout();
-                }//interface-member 
-            .about-member {
-                height: 60%;
-            }//about-member
-            }//user
+                    justify-content: space-between;
+                    .front-member{
+                        @media @phone {
+                            min-height: 30%;
+                        }//media phone
+                        
+                        .memberLayout();
+                        width: 100%;
+                        flex-flow: row nowrap;
+                        min-height: 25%;
+        
+                        .pic-name {
+                            @media @phone {
+                                h2 {
+                                    font-size: 1.5em;
+                                }//h2
+                            }//media phone
+                            height: 100%;
+                            min-height: 100%;
+                            width: 45%;
+                            min-width: 45%;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            Justify-content: space-around;
+                            align-content: center;
+                        }//pic-name
+                    }//front-member
+                }//front
+                .project-manager {
+                    @media @phone {
+                        .pm-member {
+                            display: flex; 
+                            flex-flow: row nowrap;
+                            flex-shrink: 1;
+                            .memberLayout();
+                        }//pm-member 
+                        .about-member {
+                        font-size: 1.2em;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: space-around;
+                        }//about-member
+                    }//media phone
+                    .pm-member {
+                        display: flex; 
+                        flex-flow: column nowrap;
+                        .memberLayout();
+                        width: 90%;
+                    }//interface-member 
+                .about-member {
+                    height: 60%;
+                }//about-member
+                }//projectmanager
             }//slide
           }//slider
         }//slide-wrap
