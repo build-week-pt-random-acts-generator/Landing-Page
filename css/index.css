@@ -36,6 +36,7 @@
 }
 .memberLayout img {
   width: 15em;
+  max-height: 15em;
   min-height: 25%;
   min-width: 25%;
   max-width: 25%;
@@ -294,6 +295,11 @@ body .top div h1 {
   margin: 1% 3% 0;
   color: #E7EAF6;
 }
+@media (max-width: 500px) {
+  body .top div h1 {
+    font-size: 3rem;
+  }
+}
 body .top div button {
   width: 17.5rem;
   height: 4.125rem;
@@ -392,7 +398,7 @@ body .bottom div p {
 }
 .about .team .slide-wrap .slider {
   width: 100%;
-  height: 100;
+  height: 100%;
   display: flex;
   overflow-x: auto;
 }
@@ -474,6 +480,7 @@ body .bottom div p {
   }
   .about .team .slide-wrap .slider .slide .user .front-member img {
     width: 15em;
+    max-height: 15em;
     min-height: 25%;
     min-width: 25%;
     max-width: 25%;
@@ -519,6 +526,7 @@ body .bottom div p {
 }
 .about .team .slide-wrap .slider .slide .user .interface-member img {
   width: 15em;
+  max-height: 15em;
   min-height: 25%;
   min-width: 25%;
   max-width: 25%;
@@ -529,6 +537,11 @@ body .bottom div p {
 .about .team .slide-wrap .slider .slide .user .interface-member h2 {
   font-size: 2.5rem;
   line-height: 2;
+}
+@media (max-width: 500px) {
+  .about .team .slide-wrap .slider .slide .user .pic-name {
+    text-align: center;
+  }
 }
 .about .team .slide-wrap .slider .slide .user .about-member {
   height: 60%;
@@ -577,6 +590,7 @@ body .bottom div p {
   }
   .about .team .slide-wrap .slider .slide .front .front-member img {
     width: 15em;
+    max-height: 15em;
     min-height: 25%;
     min-width: 25%;
     max-width: 25%;
@@ -630,6 +644,7 @@ body .bottom div p {
 }
 .about .team .slide-wrap .slider .slide .front .front-member img {
   width: 15em;
+  max-height: 15em;
   min-height: 25%;
   min-width: 25%;
   max-width: 25%;
@@ -690,6 +705,7 @@ body .bottom div p {
   }
   .about .team .slide-wrap .slider .slide .project-manager .pm-member img {
     width: 15em;
+    max-height: 15em;
     min-height: 25%;
     min-width: 25%;
     max-width: 25%;
@@ -735,6 +751,7 @@ body .bottom div p {
 }
 .about .team .slide-wrap .slider .slide .project-manager .pm-member img {
   width: 15em;
+  max-height: 15em;
   min-height: 25%;
   min-width: 25%;
   max-width: 25%;

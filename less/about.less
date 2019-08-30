@@ -45,7 +45,7 @@
               }//nav
           .slider {
             width: 100%;
-            height: 100;
+            height: 100%;
             display: flex;
             overflow-x: auto;
                 .slide {
@@ -89,6 +89,7 @@
                         flex-flow: column nowrap;
                         justify-content: space-around;
                         .contacts {
+                            
                             width: 30%;
                             display: flex;
                             justify-content: space-between;
@@ -121,6 +122,11 @@
                         flex-shrink: 1;
                         .memberLayout();
                     }//interface-member 
+                    .pic-name {
+                        @media @phone {
+                            text-align: center;
+                        }
+                    }
                 .about-member {
                     height: 60%;
                     display: flex;
