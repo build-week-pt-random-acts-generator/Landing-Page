@@ -3,7 +3,8 @@ A place to build out the landing page (marketing page).
 
 Proposal
 
-Our app encourages people to be more affectionate and kind to those they know.  It aims to do this by sending a daily reminder to the user which will ask them to do a random act of service for someone in their contact list.  It will also provide suggestions for how to carry out those services.
+ People want to do good and serve others, but it's just so hard to remember to do it. Even if you remember, it's hard to think of a service idea on the spot. Random acts generator solves both problems by reminding you to serve- randomly choosing a person from your contacts, and giving you suggestions for how to serve them.
+ 
 Features
 
 -- [ ]  You will build a multi-page marketing website that matches the theme chosen by your group and provides the user with details about the product your team has selected to build.

@@ -339,6 +339,11 @@ body .bottom div p {
 }
 @media (max-width: 800px) {
   body .bottom div p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  body .bottom div p {
     width: 40%;
     flex-flow: row wrap;
   }
