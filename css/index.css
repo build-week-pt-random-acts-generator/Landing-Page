@@ -448,6 +448,12 @@ body .bottom div p {
   flex-flow: column nowrap;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .about .team .slide-wrap .slider .slide .team .about-member {
+    font-size: 1.6rem;
+    margin: 1%;
+  }
+}
 .about .team .slide-wrap .slider .slide .team .about-member .contacts {
   width: 30%;
   display: flex;
