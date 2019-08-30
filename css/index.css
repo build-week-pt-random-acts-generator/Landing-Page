@@ -380,6 +380,12 @@ body .bottom div p {
     justify-content: space-around;
   }
 }
+@media (max-width: 800px) {
+  .about .team .slide-wrap nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 .about .team .slide-wrap nav a {
   display: flex;
   width: 10rem;
@@ -451,7 +457,6 @@ body .bottom div p {
 @media (max-width: 800px) {
   .about .team .slide-wrap .slider .slide .team .about-member {
     font-size: 1.6rem;
-    margin: 1%;
   }
 }
 .about .team .slide-wrap .slider .slide .team .about-member .contacts {
