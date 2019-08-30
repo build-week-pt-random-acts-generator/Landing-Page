@@ -629,7 +629,6 @@ body .bottom div p {
   }
 }
 .about .team .slide-wrap .slider .slide .front .front-member {
-  border: 1px solid hotpink;
   color: #113f67;
   justify-content: space-around;
   margin: 1%;
@@ -641,6 +640,12 @@ body .bottom div p {
   flex-flow: row nowrap;
   min-height: 25%;
   max-height: 30%;
+}
+@media (max-width: 500px) {
+  .about .team .slide-wrap .slider .slide .front .front-member {
+    min-height: 25%;
+    max-height: 30%;
+  }
 }
 .about .team .slide-wrap .slider .slide .front .front-member .pic-name {
   color: #E7EAF6;
@@ -684,6 +689,8 @@ body .bottom div p {
   .about .team .slide-wrap .slider .slide .front .front-member .pic-name h2 {
     font-size: 1.5em;
     text-align: center;
+    height: 100%;
+    min-height: 100%;
   }
 }
 .about .team .slide-wrap .slider .slide .project-manager {

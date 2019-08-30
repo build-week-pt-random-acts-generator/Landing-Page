@@ -169,11 +169,11 @@
                     flex-flow: column nowrap;
                     justify-content: space-between;
                     .front-member{
-                        border: 1px solid hotpink;
-                        // @media @phone {
-                        //     min-height: 25%;
-                        //     max-height: 30%
-                        // }//media phone
+                        // border: 1px solid hotpink;
+                        @media @phone {
+                            min-height: 25%;
+                            max-height: 30%
+                        }//media phone
                         
                         .memberLayout();
                         width: 100%;
@@ -186,6 +186,8 @@
                                 h2 {
                                     font-size: 1.5em;
                                     text-align: center;
+                                    height: 100%;
+                            min-height: 100%;
                                 }//h2
                             }//media phone
                             height: 100%;
