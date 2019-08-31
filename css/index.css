@@ -686,12 +686,6 @@ body .bottom div p {
   align-content: center;
 }
 @media (max-width: 500px) {
-  .about .team .slide-wrap .slider .slide .front .front-member .pic-name {
-    height: 100%;
-    min-height: 100%;
-  }
-}
-@media (max-width: 500px) {
   .about .team .slide-wrap .slider .slide .front .front-member .pic-name h2 {
     font-size: 1.5em;
     text-align: center;
