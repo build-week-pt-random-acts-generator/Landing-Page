@@ -1,0 +1,87 @@
+
+
+.header-setup() {
+    background-color: @headermain;
+    color: @bgcolor;
+    height: 5.625rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  nav {
+    height: 3rem;
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media @phone {
+      width: 100%;
+      justify-content: space-around;
+    }
+    
+    a {
+      color: @bgcolor;
+      text-decoration: none;
+      font-size: 2rem;
+      font-family: Lato; 
+    }
+  }
+}
+
+.cta {
+    width: 17.5rem;
+    height: 4.125rem;
+    border-radius: 1rem;
+    background: @headermain;
+    justify-content: center;
+    font-size: 1.8rem;
+    border: none;
+    a {
+      text-decoration: none;
+      color: @bgcolor;
+    }
+}
+  
+.memberLayout {
+  color: @headersecond;
+  justify-content: space-around;
+  margin: 1%;
+  max-width: 98%;
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  
+  .pic-name {
+      color: @bgcolor;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 30%;
+      max-height: 40%;
+      background: url(../assets/images/lotus-flower.png) no-repeat center center fixed;
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
+                      
+  }//pic-name
+  img {
+      width: 15em;
+      max-height: 15em;
+      min-height: 25%;
+      min-width: 25%;
+      max-width: 25%;
+      // height: 15rem;
+      border-radius: 50%;
+      overflow: visible;
+      margin-top: 3%;
+  }//img
+  h2 {
+      font-size: 2.5rem;
+      line-height: 2;
+  }//h2
+}//memberLayout
+
